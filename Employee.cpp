@@ -1,17 +1,21 @@
-#include "Employee.h"
 #include <string>
+#include <cstdlib>
 
-Employee::Employee(const std::string& name, double wage, int hoursWorked)
-    : name(name), hourlyWage(wage), hoursWorked(hoursWorked) {}
+using namespace std;
 
-Employee::~Employee() {
-    // Destructor implementation if needed
-}
+#include "Employee.h"
 
-double Employee::calcPay() const {
-    return hourlyWage * hoursWorked;
-}
-
-std::string Employee::getName() const {
+Employee::Employee (string theName, double theWage, double theHours)
+ {
+    name = theName;
+    wage = theWage;
+    hours = theHours;
+ }
+double Employee::calcPay() const
+ {
+   return wage * hours;
+ }
+string Employee::getName () const
+ {
     return name;
-}
+ }
