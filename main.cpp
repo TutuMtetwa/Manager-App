@@ -19,7 +19,8 @@ int main() {
         double bonus;
 
         cout << "Enter manager " << i << " name: ";
-        cin.ignore(); // Clear newline from previous input
+        // Clear newline from previous input
+        cin.ignore(); 
         getline(std::cin, name);
 
         cout << "Enter manager " << i << " hourly wage: ";
