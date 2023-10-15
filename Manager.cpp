@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Manager::Manager(const std::string& name, double wage, int hoursWorked, double bonus)
+Manager::Manager(const string& name, double wage, int hoursWorked, double bonus)
     : Employee(name, wage, hoursWorked), bonus(bonus) {}
 
 Manager::~Manager() {
