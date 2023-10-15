@@ -1,18 +1,19 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 
-#include <string>
+using namespace std;
 
-class Employee {
-public:
-    Employee(const std::string& name, double wage, int hoursWorked);
-    virtual ~Employee();
-    virtual double calcPay() const;
-    std::string getName() const;
-protected:
-    std::string name;
-    double hourlyWage;
-    int hoursWorked;
+class Employee
+{
+  protected:
+  string name;
+  double wage;
+  double hours;
+  public:
+  // Create a new employee
+  Employee (string theName, double theWage, double theHours);
+  // Calculate the employee’s pay.
+  double calcPay() const;
+  string getName () const;
 };
-
 #endif // EMPLOYEE_H
