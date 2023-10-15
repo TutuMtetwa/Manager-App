@@ -11,12 +11,6 @@ int main() {
 
     Manager* managers[numManagers];
 
-     string ordinalNumbers[] = {"first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth",
-                               "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth", "nineteenth", "twentieth",
-                               "twenty-first", "twenty-second", "twenty-third", "twenty-fourth", "twenty-fifth", "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth",
-                               "thirty-first", "thirty-second", "thirty-third", "thirty-fourth", "thirty-fifth", "thirty-sixth", "thirty-seventh", "thirty-eighth", "thirty-ninth", "fortieth",
-                               "forty-first", "forty-second", "forty-third", "forty-fourth", "forty-fifth", "forty-sixth", "forty-seventh", "forty-eighth", "forty-ninth", "fiftieth"};
-
     for (int i = 0; i < numManagers; ++i) 
     {
         string name;
@@ -24,17 +18,17 @@ int main() {
         int hours;
         double bonus;
 
-        cout << "Enter " << ordinalNumbers[i] <<  " manager's name: ";
+        cout << "Enter manager " << i << " name: ";
         cin.ignore(); // Clear newline from previous input
         getline(std::cin, name);
 
-        cout << "Enter " << ordinalNumbers[i] <<  " manager's hourly wage: ";
+        cout << "Enter manager " << i << " hourly wage: ";
         cin >> wage;
 
-        cout << "Enter " << ordinalNumbers[i] <<  " manager's worked hours: ";
+        cout << "Enter manager " << i << " hours worked: ";
         cin >> hours;
 
-        cout << "Enter " << ordinalNumbers[i] <<  " manager's bonus: ";
+        cout << "Enter manager " << i << " bonus: ";
         cin >> bonus;
 
         managers[i] = new Manager(name, wage, hours, bonus);
