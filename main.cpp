@@ -1,3 +1,8 @@
+// Tutu Mtetwa
+// 10/15/2023
+/*Thi program, implemented in C++, models a payroll system with Employee and Manager classes, 
+enabling user input for manager details and computing the highest-paid manager and average pay.*/
+
 #include <iostream>
 #include <iomanip>
 #include "Manager.h"
